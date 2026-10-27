@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Leadership Midterm Study Site</title>
+<style>
+:root{--bg:#f2f4f9;--fg:#1b2033;--mut:#59617a;--card:#fff;--line:#d5daea;--ac:#2a3a9c;--on:#fff;--hl:#ffe45c;--hlf:#1b2033;--ok:#17703a;--bad:#b42318;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11141e;--fg:#e6e8f2;--mut:#9aa3bd;--card:#1a1f2d;--line:#2b3247;--ac:#93a4ff;--on:#10142a;--hl:#e0b92f;--hlf:#14151c;--ok:#6fdc9a;--bad:#ff9a90}}
+:root[data-theme="dark"]{--bg:#11141e;--fg:#e6e8f2;--mut:#9aa3bd;--card:#1a1f2d;--line:#2b3247;--ac:#93a4ff;--on:#10142a;--hl:#e0b92f;--hlf:#14151c;--ok:#6fdc9a;--bad:#ff9a90}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Charter,"Iowan Old Style",Georgia,serif}
+.w{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:1.7rem;line-height:1.2;margin:8px 0 4px}h2{font-size:1.25rem;line-height:1.3}
+h3{font-size:1.05rem;margin:14px 0 4px}
+.sub{color:var(--mut);font-size:.92rem;margin:4px 0 10px}
+nav{display:flex;gap:6px;overflow-x:auto;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:2}
+button{font:inherit;color:var(--fg)}
+nav button,.btn{border:1px solid var(--line);background:var(--card);padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+nav button.on,.btn.pri{background:var(--ac);color:var(--on);border-color:var(--ac)}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0 14px}
+summary{cursor:pointer;font-weight:700;padding:12px 0}
+summary .cat{display:block;font:600 .74rem/1.3 system-ui,sans-serif;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details>div{padding-bottom:10px}ul{padding-left:20px;margin:6px 0}li{margin:5px 0}
+mark{background:var(--hl);color:var(--hlf);padding:0 3px;border-radius:2px}
+.tags{margin:4px 0 8px}
+.tag{display:inline-block;font:600 .78rem/1.4 system-ui,sans-serif;padding:3px 10px;border-radius:999px;border:1px solid var(--ac);color:var(--ac);margin:0 6px 6px 0}
+.tag.yes{border-color:var(--ok);color:var(--ok)}
+.tag.no{border-color:var(--bad);color:var(--bad)}
+.gr{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.gr div{border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center}.gr .mid{grid-column:1/3}
+.pyr{display:flex;flex-direction:column;align-items:center;gap:4px;margin:12px 0}
+.pyr div{text-align:center;padding:9px 6px;border-radius:6px;font:600 .9rem/1.3 system-ui,sans-serif;color:var(--fg);border:1px solid var(--ac)}
+.pyr .l5{width:42%;background:color-mix(in srgb,var(--ac) 55%,var(--card))}
+.pyr .l4{width:56%;background:color-mix(in srgb,var(--ac) 44%,var(--card))}
+.pyr .l3{width:70%;background:color-mix(in srgb,var(--ac) 33%,var(--card))}
+.pyr .l2{width:84%;background:color-mix(in srgb,var(--ac) 22%,var(--card))}
+.pyr .l1{width:100%;background:color-mix(in srgb,var(--ac) 12%,var(--card))}
+.pyr small{display:block;font-weight:400;font-size:.75rem;color:var(--mut)}
+.lvl{border-left:4px solid var(--ac);padding:4px 0 4px 12px;margin:12px 0}
+.lvl p{margin:3px 0}
+.fc{display:flex;flex-direction:column;justify-content:center;width:100%;min-height:220px;font-size:1.15rem;text-align:left;border:2px solid var(--ac);background:var(--card);border-radius:14px;padding:20px;cursor:pointer}
+.fc small{color:var(--mut);margin-bottom:10px;font-size:.85rem}
+.row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);padding:12px;border-radius:10px;margin:8px 0;cursor:pointer}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 16%,var(--card))}
+.opt.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 16%,var(--card))}
+</style></head><body><div class="w">
+<h1>Business Leadership Midterm</h1>
+<p class="sub">Units 1 and 2: management basics, planning tools, and leadership theory</p>
+<nav><button data-t="guide">Study guide</button><button data-t="cards">Flashcards</button><button data-t="quiz">Quiz</button><button data-t="prac">Practice test</button></nav>
+<main id="app"></main></div>
+<script>
+const tag=(t,c="")=>`<span class="tag ${c}">${t}</span>`;
+const tags=(...a)=>`<div class="tags">${a.join("")}</div>`;
+const PLAN_YES=tag("Planning tool ✓","yes"), PLAN_NO=tag("Not a planning tool","no");
+// [category, title, body]
+const G=[
+["Unit 1 · Management basics","Functions of management (P-L-O-C)",tags(tag("Big category: Management Process"))+`<ul><li><mark>Planning</mark>: set objectives and decide what actions will reach them. <i>(SWOT and Porter's Five Forces are the planning tools.)</i></li><li><mark>Leading</mark>: arouse enthusiasm and direct people's efforts toward the plan.</li><li><mark>Organizing</mark>: assign tasks, allocate resources, and coordinate individuals and groups.</li><li><mark>Controlling</mark>: measure performance, compare it to the objectives, and take corrective action. Look at past data and results to make future decisions.</li></ul>`],
+["Unit 1 · Management basics","Three skills of leadership",tags(tag("Big category: Leadership Skills"))+`<ul><li><mark>Technical</mark>: special expertise or training in an area.</li><li><mark>Human</mark>: working well with others.</li><li><mark>Conceptual</mark>: critical, analytical thinking; breaking down a problem and solving it.</li></ul><p>Upper-level managers rely most on <b>human and conceptual</b> skills.</p>`],
+["Unit 1 · Management basics","Quality of work life: 6 indicators",tags(tag("Big category: Quality of Work Life (QWL)"))+`<p>QWL is an indicator of the overall quality of human experiences in the workplace.</p><ul><li>Fair pay (are you paid fairly for your experience?)</li><li>Safe working conditions (including mental health and having an HR)</li><li>Pride in the work and the organization</li><li>Protection of individual rights (what policies protect you?)</li><li>Opportunity to advance</li><li>Opportunity to be challenged and learn new skills</li></ul>`],
+["Unit 1 · Management basics","Five areas of success",tags(tag("Big category: Five Areas of Success"))+`<ul><li><mark>Globalization</mark>: worldwide interdependence of resources, markets, and competition. Supplier relationships and expanding your market.</li><li><mark>Ethics</mark>: a code of moral principles. Good ethics toward the community (give back), customers (refund policy, good service), and employees.</li><li><mark>Technology</mark>: the Internet, computers, and IT keep transforming work; demand grows for knowledge workers who can use them.</li><li><mark>Intellectual capital</mark>: the collective brainpower of your workforce. Attract and retain quality employees: do people want to work there?</li><li><mark>Workplace diversity</mark>: differences in gender, age, race, ethnicity, religion, sexual orientation, and ability. Brings challenges and opportunities.</li></ul>`],
+["Planning Tools","Planning tool: SWOT",tags(tag("Big category: Planning Tools"),PLAN_YES)+`<p><b>Yes, SWOT is a planning tool.</b> It supports the <mark>Planning</mark> function of P-L-O-C.</p><ul><li><mark>Strengths</mark> and <mark>weaknesses</mark> are <b>internal</b> factors.</li><li><mark>Opportunities</mark> and <mark>threats</mark> are <b>external</b> factors.</li></ul><p>List each, then use strengths, fix weaknesses, take opportunities, and guard against threats.</p>`],
+["Planning Tools","Planning tool: Porter's Five Forces",tags(tag("Big category: Planning Tools"),PLAN_YES)+`<p><b>Yes, Porter's Five Forces is a planning tool.</b> It supports the <mark>Planning</mark> function of P-L-O-C.</p><p>Designed to determine whether you should move into a market. Mark each force + (good for you) or −. <mark>3 or more + is an attractive market; 2 or fewer is unattractive.</mark></p><ul><li><b>Buying power of consumers</b>: who has the power over price? Ideally your price is set and non-negotiable.</li><li><b>Buying power of suppliers</b>: do suppliers want to come to you?</li><li><b>Competitive intensity</b>: how hard existing firms compete.</li><li><b>Threat of substitutes</b>: indirect competition.</li><li><b>Threat of new entry</b>: regulatory issues, cost to enter, and whether someone bigger could come in.</li></ul>`],
+["Classical Management","Classical Management: overview",tags(tag("Big category: Classical Management"))+`<p>Classical management is the <b>big category</b> for the early approaches that focused on <mark>efficiency</mark>, structure, and the best way to get work done.</p><p><b>Under Classical Management:</b></p><ul><li>Scientific management (Frederick Taylor), which includes <b>motion study</b> (the Gilbreths)</li><li>Bureaucratic management (Max Weber)</li></ul>`],
+["Classical Management","Scientific management",tags(tag("Big category: Classical Management"),PLAN_NO)+`<p><b>This is under Classical Management.</b></p><p>Classical approach (Frederick Taylor): find the most efficient way to do work.</p><ul><li><mark>Economic incentives</mark>: pay linked to output.</li><li>Hire people with skill and <mark>train them</mark>.</li><li>Find the <mark>one best way</mark> to do each job.</li></ul><p><b>Motion study</b> (the Gilbreths), which is also under Classical Management as part of scientific management: look at how a job is done, break it into tasks, and improve proficiency.</p>`],
+["Classical Management","Bureaucratic management",tags(tag("Big category: Classical Management"),PLAN_NO)+`<p><b>This is under Classical Management.</b></p><ul><li>Highly efficient.</li><li><mark>Hierarchy of authority</mark>.</li><li>Lots of rules and regulations (<mark>red tape</mark>), which act as checkpoints.</li><li>Also: division of labour, written records, and hiring by qualifications (Max Weber).</li></ul><p>Used today in government offices, the military, hospitals, and large universities.</p>`],
+["Behavioural Management","Behavioural Management: overview",tags(tag("Big category: Behavioural Management"))+`<p>Behavioural management is the <b>big category</b> for approaches that focus on people: their needs, attitudes, and social relationships at work.</p><ul><li>Primary motivator: being part of a team and a culture of success.</li></ul><p><b>Under Behavioural Management:</b></p><ul><li>The Hawthorne studies (Elton Mayo)</li><li>Maslow's hierarchy of needs</li><li>McGregor's Theory X and Theory Y</li></ul>`],
+["Behavioural Management","Hawthorne studies",tags(tag("Big category: Behavioural Management"),PLAN_NO)+`<p><b>This is under Behavioural Management.</b></p><ul><li>Led by <mark>Elton Mayo</mark> at the Western Electric Hawthorne plant.</li><li>Productivity rose when workers got <mark>attention and social support</mark>, not just because of changes like lighting or pay.</li><li><b>Hawthorne effect</b>: people perform better when they feel noticed and valued.</li><li>This started the <mark>human relations</mark> approach: social needs and group relationships affect performance.</li></ul><p><b>Workplace example:</b> a manager who checks in with the team, recognizes good work, and builds a friendly team culture sees output go up.</p>`],
+["Behavioural Management","Maslow's hierarchy of needs",tags(tag("Big category: Behavioural Management"),PLAN_NO)+`<p><b>This is under Behavioural Management.</b></p><p>People are motivated by needs in order from the bottom up. Lower needs must be met before higher needs motivate. <mark>For the best results, cater to every level.</mark></p>
+<div class="pyr" aria-label="Maslow's pyramid, top to bottom">
+<div class="l5">5. Self-actualization<small>reach full potential</small></div>
+<div class="l4">4. Esteem<small>respect and recognition</small></div>
+<div class="l3">3. Social<small>belonging and friendship</small></div>
+<div class="l2">2. Safety<small>security and stability</small></div>
+<div class="l1">1. Physiological<small>basic survival needs</small></div>
+</div>
+<p class="sub">Bottom is the most basic need; top is the highest need.</p>
+<div class="lvl"><h3>1. Physiological (bottom)</h3><p><b>Looking for:</b> basic survival needs such as food, water, rest, and shelter.</p><p><b>In the workplace:</b> a fair wage that covers living costs, reasonable hours, breaks, and a comfortable place to work.</p></div>
+<div class="lvl"><h3>2. Safety</h3><p><b>Looking for:</b> security, stability, and protection from harm.</p><p><b>In the workplace:</b> job security, safe working conditions, health benefits, a pension, and clear policies that protect employees.</p></div>
+<div class="lvl"><h3>3. Social</h3><p><b>Looking for:</b> belonging, friendship, and acceptance.</p><p><b>In the workplace:</b> teamwork, a friendly culture, team lunches or events, and good relationships with coworkers and the manager.</p></div>
+<div class="lvl"><h3>4. Esteem</h3><p><b>Looking for:</b> respect, recognition, status, and confidence.</p><p><b>In the workplace:</b> praise for good work, an employee of the month award, a job title, a promotion, or a bonus.</p></div>
+<div class="lvl"><h3>5. Self-actualization (top)</h3><p><b>Looking for:</b> reaching your full potential and personal growth.</p><p><b>In the workplace:</b> challenging projects, training and development, creative freedom, and the chance to lead or learn new skills.</p></div>`],
+["Behavioural Management","McGregor's Theory X and Theory Y",tags(tag("Big category: Behavioural Management"),PLAN_NO)+`<p><b>This is under Behavioural Management.</b></p><ul><li><mark>Theory X</mark>: negative attitude; people dislike work and need control.</li><li><mark>Theory Y</mark>: positive attitude; people seek responsibility and are self-directed.</li><li><mark>Self-fulfilling prophecy</mark>: you treat employees the way you expect them to behave from the start, and they end up behaving that way.</li></ul>`],
+["Modern Management","Quantitative management",tags(tag("Big category: Modern Management"),PLAN_NO)+`<p><b>This is under Modern Management.</b></p><p>Decisions are made on numbers and data (management science, statistics, modelling).</p>`],
+["Modern Management","Contingency thinking (modern management)",tags(tag("Big category: Modern Management"),PLAN_NO)+`<p><b>This is under Modern Management.</b></p><p>There is not <b>one</b> best way to manage people. The best approach depends on the situation.</p>`],
+["Leadership Styles","Blake and Mouton's leadership grid",tags(tag("Big category: Leadership Styles"),PLAN_NO)+`<p><b>Not a planning tool.</b> It is a leadership tool for describing a manager's style.</p><p>Concern for <b>relationships (people)</b> on the vertical axis, concern for <b>productivity</b> on the horizontal axis.</p><div class="gr"><div>Country club<br><small>high people, low production</small></div><div><mark>Team</mark><br><small>high on both: the ideal</small></div><div class="mid">Middle of the road: moderate on both</div><div>Impoverished<br><small>low on both</small></div><div>Authority-obedience<br><small>high production, low people</small></div></div>`]];
+const F=[
+["What does P-L-O-C stand for?","Planning, Leading, Organizing, Controlling."],
+["Planning","Setting objectives and deciding what actions will accomplish them."],
+["Organizing","Assigning tasks, allocating resources, and coordinating the work of individuals and groups."],
+["Leading","Arousing enthusiasm and directing people's efforts to fulfil plans and reach objectives."],
+["Controlling","Measuring performance, comparing results to objectives, and taking corrective action. Use past data and results to make future decisions."],
+["Technical skill","Special expertise or training in an area."],
+["Human skill","Working well with others."],
+["Conceptual skill","Thinking critically and analytically: breaking down and solving problems."],
+["Which two skills matter most to upper-level managers?","Human and conceptual."],
+["List the 6 QWL indicators.","Fair pay, safe working conditions, pride, protection of individual rights, opportunity to advance, opportunity to be challenged and learn new skills."],
+["List the 5 areas of success.","Globalization, ethics, technology, intellectual capital, workplace diversity."],
+["Intellectual capital","The collective brainpower or shared knowledge of a workforce that creates value. Attract and retain quality employees."],
+["Globalization","Worldwide interdependence of resource flows, product markets, and competition. Supplier relationships and expanding your market."],
+["Which SWOT factors are internal and which are external?","Strengths and weaknesses are internal. Opportunities and threats are external."],
+["Is SWOT a planning tool?","Yes. SWOT is a planning tool (supports the Planning function)."],
+["Is Porter's Five Forces a planning tool?","Yes. Porter's Five Forces is a planning tool used to decide whether to enter a market."],
+["Is Blake and Mouton's leadership grid a planning tool?","No. It is a leadership tool that describes a manager's style."],
+["Name the two planning tools.","SWOT analysis and Porter's Five Forces."],
+["List Porter's Five Forces.","Buying power of consumers, buying power of suppliers, competitive intensity, threat of substitutes, threat of new entry."],
+["What is Porter's Five Forces designed to determine? How is it scored?","Whether you should move into a market. Mark each force + or −: 3 or more + is attractive; 2 or fewer is unattractive."],
+["Threat of substitute products","Indirect competition: different products that meet the same need."],
+["Threat of new entry","Regulatory issues, how expensive it is to enter, and whether someone bigger could come in."],
+["What falls under Classical Management?","Scientific management (including motion study) and bureaucratic management."],
+["What big category is scientific management under?","Classical Management."],
+["What big category is bureaucratic management under?","Classical Management."],
+["Three points that define scientific management","Economic incentives, hiring skilled people and training them, and finding the one best way to do each job."],
+["Motion study","Breaking a job into tasks to see how it is done and improve proficiency. Part of scientific management, under Classical Management."],
+["Bureaucratic management","Highly efficient, hierarchy of authority, lots of rules and regulations (red tape)."],
+["What falls under Behavioural Management?","The Hawthorne studies, Maslow's hierarchy of needs, and McGregor's Theory X and Theory Y."],
+["Hawthorne studies","Under Behavioural Management. Elton Mayo found productivity rose with attention and social relationships, which launched the human relations approach."],
+["Maslow's hierarchy of needs","Under Behavioural Management. Bottom to top: physiological, safety, social, esteem, self-actualization. Cater to every level for the best results."],
+["Maslow: Physiological","Basic survival needs. Workplace: a fair wage, reasonable hours, breaks."],
+["Maslow: Safety","Security and stability. Workplace: job security, safe conditions, benefits."],
+["Maslow: Social","Belonging and friendship. Workplace: teamwork, friendly culture, team events."],
+["Maslow: Esteem","Respect and recognition. Workplace: praise, awards, titles, promotions."],
+["Maslow: Self-actualization","Reaching full potential. Workplace: challenging projects, training, creative freedom."],
+["Theory X vs. Theory Y","Under Behavioural Management. X: negative view of workers, who need control. Y: positive view; workers are self-directed and seek responsibility."],
+["Self-fulfilling prophecy","You treat employees the way you expect them to behave from the start, and they act that way."],
+["Quantitative management","Under Modern Management. Decisions are made on numbers and data."],
+["Contingency (modern) management","Under Modern Management. There is not one best way to manage people; it depends on the situation."],
+["Blake and Mouton: what are the axes?","Concern for relationships (people) vertical, concern for productivity horizontal."],
+["Name the five Blake and Mouton styles.","Team (high both), country club (high people), authority-obedience (high production), impoverished (low both), middle of the road."]];
+const Q=[
+["Which is NOT one of the four functions of management?",["Planning","Leading","Marketing","Controlling"],2,"The four are planning, leading, organizing, and controlling."],
+["Measuring performance against objectives and taking corrective action is…",["Planning","Organizing","Leading","Controlling"],3,"That is the controlling function."],
+["Which two skills matter most to upper-level managers?",["Technical and human","Human and conceptual","Technical and conceptual","Technical only"],1,"Upper-level managers rely most on human and conceptual skills."],
+["In a SWOT analysis, which two are external factors?",["Strengths and weaknesses","Strengths and threats","Weaknesses and opportunities","Opportunities and threats"],3,"Opportunities and threats are external; strengths and weaknesses are internal."],
+["Which of these is a planning tool?",["Blake and Mouton's grid","SWOT analysis","Theory X and Y","Motion study"],1,"SWOT (and Porter's Five Forces) are the planning tools."],
+["Is Blake and Mouton's leadership grid a planning tool?",["Yes","No"],1,"No. It describes leadership style, not planning."],
+["In Porter's Five Forces, a market is attractive when…",["Any one force is +","3 or more forces are +","All five are −","2 or more are −"],1,"3 or more + is attractive; 2 or fewer is unattractive."],
+["Which force asks whether someone bigger could come in after you?",["Threat of substitutes","Supplier power","Threat of new entry","Buyer power"],2,"Threat of new entry covers regulation, cost, and bigger entrants."],
+["Scientific and bureaucratic management fall under which big category?",["Behavioural Management","Modern Management","Classical Management","Planning Tools"],2,"Both are Classical Management approaches."],
+["Which is a feature of scientific management?",["Economic incentives and training","Red tape","Team culture","Contingency thinking"],0,"Taylor stressed pay incentives, skilled hiring, training, and one best way."],
+["The Hawthorne studies fall under which big category?",["Classical Management","Behavioural Management","Quantitative Management","Planning Tools"],1,"Hawthorne, Maslow, and McGregor are all Behavioural Management."],
+["The Hawthorne studies pointed toward…",["Strict hierarchy","Pay incentives only","Attention and social relationships boosting productivity","Decisions based on data only"],2,"They launched the human relations approach."],
+["A Theory X manager assumes employees…",["Seek responsibility","Dislike work and need control","Are self-directed","Need no supervision"],1,"Theory X is the negative view; Theory Y is the positive view."],
+["Treating employees as you expect them to behave, and they do, is…",["Contingency thinking","Motion study","A self-fulfilling prophecy","Red tape"],2,"This is the self-fulfilling prophecy from McGregor's theories."],
+["Which Blake and Mouton style is high production, low concern for people?",["Country club","Team","Impoverished","Authority-obedience"],3,"Authority-obedience; country club is the reverse."],
+["Which approach says there is not one best way to manage people?",["Scientific management","Contingency thinking","Bureaucracy","Quantitative management"],1,"Contingency (modern) management: it depends on the situation."],
+["What is at the top of Maslow's hierarchy?",["Esteem","Safety","Social","Self-actualization"],3,"The order is physiological, safety, social, esteem, self-actualization."],
+["What is at the bottom of Maslow's hierarchy?",["Safety","Physiological","Social","Esteem"],1,"Physiological needs (food, rest, a fair wage) are the base."],
+["An employee of the month award meets which Maslow need?",["Safety","Social","Esteem","Physiological"],2,"Recognition and respect are esteem needs."],
+["Job security and health benefits meet which Maslow need?",["Safety","Self-actualization","Social","Esteem"],0,"Security and stability are safety needs."],
+["Team lunches and a friendly culture meet which Maslow need?",["Physiological","Social","Esteem","Self-actualization"],1,"Belonging and friendship are social needs."],
+["Red tape is most associated with…",["Bureaucratic management","Motion study","Human relations","The team style"],0,"Lots of rules and regulations are a hallmark of bureaucracy."]];
+const P=[
+["#1 A and B: List Porter's Five Forces. What is it designed to determine?","Buying power of consumers, buying power of suppliers, competitive intensity, threat of substitutes, threat of new entry. It determines whether you should move into a market. It is a <b>planning tool</b>."],
+["#1 C: Sample approach for McDonald's in the south end of Guelph","Rate each force + or −. For example: strong brand and set prices (+ buyers), reliable suppliers (+), many fast-food rivals nearby (−), many substitutes like other restaurants and groceries (−), high start-up cost and brand barriers (+ new entry). 3 or more + means attractive. Adjust each rating with what you know about the area."],
+["#2 List the 6 QWL indicators","Fair pay, safe working conditions, pride, protection of individual rights, opportunity to advance, opportunity to be challenged and learn new skills. For 'most important', pick one and explain why it matters most when choosing a workplace."],
+["#4 A: What does PLOC stand for? Name two planning tools.","Planning, Leading, Organizing, Controlling. Planning tools: SWOT analysis and Porter's Five Forces."],
+["#4 B: Define control","Measuring performance, comparing results to objectives, and taking corrective action, by looking at past data and results to make future decisions."],
+["#5 List the 5 areas of success","Globalization, ethics, technology, intellectual capital, workplace diversity."],
+["#6 List the 3 skill categories of leadership","Technical, human, and conceptual. Upper-level managers rely most on human and conceptual skills."],
+["#7 List 3 points that define scientific management","Scientific management is under <b>Classical Management</b>. Economic incentives; hiring skilled people and training them; finding the one best way to do each job (motion study breaks a job into tasks to improve proficiency)."],
+["#9 Define bureaucratic management and give an example","Bureaucratic management is under <b>Classical Management</b>. A highly efficient style built on a hierarchy of authority and many rules and regulations (red tape). Example: a government office or the military, where clear ranks, written rules, and checkpoints keep work consistent and accountable."],
+["Extra: Explain the Hawthorne studies","Under <b>Behavioural Management</b>. Elton Mayo found productivity rose when workers got attention and social support. This started the human relations approach. Example: a manager who recognizes work and builds team culture sees output rise."],
+["Extra: Draw Maslow's hierarchy and give a workplace example of each level","Under <b>Behavioural Management</b>. Bottom to top: <b>Physiological</b> (fair wage, breaks), <b>Safety</b> (job security, safe conditions, benefits), <b>Social</b> (teamwork, friendly culture), <b>Esteem</b> (recognition, promotions, awards), <b>Self-actualization</b> (challenging projects, training, growth)."]];
+const $=s=>document.querySelector(s),app=$("#app");
+let fi=0,fo=[],fl=false,qi=0,qs=[],sc=0,an=null;
+const sh=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+const det=l=>l.map(([t,b])=>`<details><summary>${t}</summary><div>${b}</div></details>`).join("");
+const detG=l=>l.map(([c,t,b])=>`<details><summary><span class="cat">${c}</span>${t}</summary><div>${b}</div></details>`).join("");
+function go(t){document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t==t));
+if(t=="guide")app.innerHTML=`<p class="sub">Unit 2 details beyond your notes (such as Maslow's levels and the Hawthorne background) are added from standard textbook content. The small label above each heading shows its big category.</p>`+detG(G);
+else if(t=="cards"){fo=sh(F);fi=0;fl=false;card()}
+else if(t=="quiz")startQ();
+else app.innerHTML=`<p class="sub">Tap a question to reveal a model answer.</p>`+det(P)}
+function card(){const c=fo[fi];app.innerHTML=`<p class="sub">Card ${fi+1} of ${fo.length}. Tap the card to flip it.</p><button class="fc" id="fc"><small>${fl?"Answer":"Question"}</small>${fl?c[1]:c[0]}</button><div class="row"><button class="btn" id="pv">Previous</button><button class="btn pri" id="nx">Next</button><button class="btn" id="sf">Shuffle</button></div>`;
+$("#fc").onclick=()=>{fl=!fl;card()};
+$("#pv").onclick=()=>{fi=(fi+fo.length-1)%fo.length;fl=false;card()};
+$("#nx").onclick=()=>{fi=(fi+1)%fo.length;fl=false;card()};
+$("#sf").onclick=()=>{fo=sh(F);fi=0;fl=false;card()}}
+function startQ(){qs=sh(Q);qi=0;sc=0;quiz()}
+function quiz(){if(qi>=qs.length){app.innerHTML=`<h2>You scored ${sc} of ${qs.length}</h2><p>${sc/qs.length>=.8?"Solid. Use the flashcards for any you missed.":"Reread the study guide, then try again."}</p><button class="btn pri" id="rs">Retry quiz</button>`;$("#rs").onclick=startQ;return}
+const q=qs[qi];an=null;
+app.innerHTML=`<p class="sub">Question ${qi+1} of ${qs.length}</p><h2>${q[0]}</h2>`+q[1].map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join("")+`<div id="fb"></div>`;
+document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if(an!==null)return;an=+b.dataset.i;
+document.querySelectorAll(".opt").forEach((x,i)=>{if(i==q[2])x.classList.add("ok");else if(i==an)x.classList.add("bad")});
+if(an==q[2])sc++;
+$("#fb").innerHTML=`<p><b>${an==q[2]?"Correct.":"Not quite."}</b> ${q[3]}</p><button class="btn pri" id="nq">${qi+1<qs.length?"Next question":"See score"}</button>`;
+$("#nq").onclick=()=>{qi++;quiz()}})}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>go(b.dataset.t));
+go("guide");
+</script></body></html>
+```
